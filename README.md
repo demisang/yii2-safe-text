@@ -4,13 +4,6 @@ Yii2 extension for hiding personal data(email, phone, etc.) from spam grabbing
 
 Installation
 ---
-Run
-```code
-php composer.phar require "demi/safe-text" "~1.0"
-```
-or
-
-
 Add to composer.json in your project
 ```json
 {
@@ -19,13 +12,8 @@ Add to composer.json in your project
 	}
 }
 ```
-then run command
-```code
-php composer.phar update
-```
 
 # Usage
----
 
 ### Hide phone number:
 ```php
@@ -58,7 +46,6 @@ will be generated:
 ```
 
 # Options
----
 All widget options
 ```php
 <?= \demi\safeText\Widget::widget([
@@ -72,7 +59,7 @@ All widget options
 ]) ?>
 ```
 
-will be generate:
+will be generated:
 ```javascript
 (function() {
     var a = document.createElement('a');

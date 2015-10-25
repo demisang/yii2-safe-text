@@ -8,11 +8,24 @@ use yii\helpers\Json;
 use yii\helpers\Url;
 
 /**
- * Widget for safe output text
+ * Widget for safe output text.
  *
- * hide phone number:
+ * Examples:
+ *
+ * Hide phone number
+ * <?= \demi\safeText\Widget::widget(['text' => '+555 478 24 75']) ?>
+ *
+ * Hide email
  * ```php
- *
+ * <?= \demi\safeText\Widget::widget([
+ *  'url' => 'skype:girlfriend?chat',
+ *  'text' => 'girlfriend',
+ *  'linkTextTemplate' => '<i class="fa fa-skype"></i> {text}',
+ *  'linkOptions' => [
+ *  'class' => 'skype-link',
+ *  'target' => '_blank',
+ *  ],
+ * ]) ?>
  * ```
  *
  * @package demi\safeText
