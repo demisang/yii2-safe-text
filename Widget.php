@@ -1,8 +1,13 @@
 <?php
+/**
+ * @copyright Copyright (c) 2018 Ivan Orlov
+ * @license   https://github.com/demisang/yii2-safe-text/blob/master/LICENSE
+ * @link      https://github.com/demisang/yii2-safe-text#readme
+ * @author    Ivan Orlov <gnasimed@gmail.com>
+ */
 
 namespace demi\safeText;
 
-use Yii;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\helpers\Url;

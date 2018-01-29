@@ -1,23 +1,14 @@
 {
     "name": "demi/safe-text",
     "description": "Hiding personal data(email, phone, etc.) from spam grabbing",
-    "keywords": [
-        "yii2",
-        "hide",
-        "personal",
-        "data",
-        "email",
-        "phone",
-        "antispam",
-        "grabbing"
-    ],
+    "keywords": ["yii2", "hide", "personal", "data", "email", "phone", "antispam", "grabbing"],
     "homepage": "https://github.com/demisang/yii2-safe-text#readme",
     "type": "yii2-extension",
-    "license": "GNU",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Ivan Orlov",
-            "email": "orlov_mail@mail.ru",
+            "email": "gnasimed@gmail.com",
             "homepage": "https://orlov.io/",
             "role": "Creator"
         }

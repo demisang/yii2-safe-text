@@ -4,13 +4,9 @@ Yii2 extension for hiding personal data(email, phone, etc.) from spam grabbing
 
 Installation
 ---
-Add to composer.json in your project
-```json
-{
-	"require": {
-  		"demi/safe-text": "~1.0"
-	}
-}
+Run
+```code
+composer require "demi/safe-text" "~1.0"
 ```
 
 # Usage
