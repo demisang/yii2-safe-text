@@ -84,20 +84,21 @@ class Widget extends \yii\base\Widget
             $linkAttributes = '';
 
             foreach ($this->linkOptions as $k => $v) {
-                $linkAttributes .= PHP_EOL . "a.setAttribute('$k', '$v');";
+                $linkAttributes .= PHP_EOL . "    a.setAttribute('$k', '$v');";
             }
 
             $url_chars = Json::encode(self::encode(Url::to($this->url)));
             $script = "
-			(function() {
-				var a = document.createElement('a');
-				a.href = $url_chars.reverse().join('');$linkAttributes
-				var text = $js_chars.reverse().join('');
-				var template = '$this->linkTextTemplate';
-				a.innerHTML = template.replace('{text}', text);
+(function() {
+    var a = document.createElement('a');
+    a.href = $url_chars.reverse().join('');$linkAttributes
+    var text = $js_chars.reverse().join('');
+    var template = '$this->linkTextTemplate';
+    a.innerHTML = template.replace('{text}', text);
 
-				document.write(a.outerHTML);
-			}());";
+    document.write(a.outerHTML);
+}());
+";
         }
         $output .= Html::script($script) . PHP_EOL;
 
